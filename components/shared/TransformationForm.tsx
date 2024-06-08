@@ -187,7 +187,7 @@ export default function TransformationForm({ action, data = null, userId, type, 
 
                     {type === 'fill' && (
                          <CustomField control={form.control} name="aspectRatio" formLabel="Aspect Ratio" className="w-full" render={({ field }) => (
-                              <Select onValueChange={(value) => onSelectFieldHandler(value, field.onChange)}>
+                              <Select onValueChange={(value) => onSelectFieldHandler(value, field.onChange)} value={field.value}>
                                    <SelectTrigger className="select-field">
                                         <SelectValue placeholder="Select size" />
                                    </SelectTrigger>

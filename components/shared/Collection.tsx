@@ -81,7 +81,7 @@ export const Collection = ({
                               </p>
 
                               <Button
-                                   className="button w-32 bg-purple-gradient bg-cover text-white"
+                                   className="button w-32 bg-teal-gradient bg-cover text-white"
                                    onClick={() => onPageChange("next")}
                                    disabled={Number(page) >= totalPages}
                               >
@@ -96,7 +96,7 @@ export const Collection = ({
 
 const Card = ({ image }: { image: IImage }) => {
      return (
-          <li>
+          <li className="border rounded-xl">
                <Link href={`/transformations/${image._id}`} className="collection-card">
                     <CldImage
                          src={image.publicId}
